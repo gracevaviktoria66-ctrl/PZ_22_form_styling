@@ -1,6 +1,71 @@
-* , *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; font-family: Arial, sans-serif; color: #171717; background: #f5f4ef; }
-a { color: inherit; }
-button, input, textarea, select { font: inherit; }
-body{padding:48px}.page{max-width:640px;margin:0 auto}.form{display:grid;gap:20px;padding:32px;background:#fff;border:1px solid #aaa}.field{display:grid;gap:8px}input,textarea,button{width:100%;padding:14px;border:2px solid #171717;border-radius:0;background:#fff}textarea{min-height:150px;resize:vertical}button{background:#d8ff55;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}/* TODO hover, focus, focus-visible, user-invalid, valid, placeholder, checked */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Arial, sans-serif;
+  color: #171717;
+  background: #f5f4ef;
+}
+a {
+  color: inherit;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+body {
+  padding: 48px;
+}
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.form {
+  display: grid;
+  gap: 20px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #aaa;
+}
+.field {
+  display: grid;
+  gap: 8px;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #171717;
+  border-radius: 0;
+  background: #fff;
+}
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+button {
+  background: #d8ff55;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+} /* TODO hover, focus, focus-visible, user-invalid, valid, placeholder, checked */
+input:hover { border-color: #8b81d9; }
+input:focus { outline: none; }
+input:focus-visible { outline: 3px solid #171717; outline-offset: 3px; }
+input:valid { border-color: #00ff51; }
+input:user-invalid { border-color: #bd6464; background: #fff1f1; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+input[type="checkbox"]:checked + span { background: #0f0b28; color: white; }
+input::placeholder { color: #6a6a6a; }
